@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+  Reaction Nano – Test de temps de réaction.
+  Jouez instantanément dans le navigateur sans installation.
+-->
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reaction Nano</title>
+    <!-- Open Graph pour un aperçu enrichi sur X/Twitter et autres plateformes -->
+    <meta property="og:title" content="Reaction Nano – test de réaction" />
+    <meta
+      property="og:description"
+      content="Testez votre temps de réaction et partagez votre score !"
+    />
+    <!-- Utilisation d'une image externe pour l'aperçu (pas d'upload requis) -->
+    <meta
+      property="og:image"
+      content="https://dummyimage.com/1200x630/2f3a74/e55c6e.png&text=Reaction+Nano"
+    />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <!-- Écran d'instructions et de démarrage / messages -->
+      <div id="status" class="overlay">
+        <h1>Reaction Nano</h1>
+        <p id="message">
+          Cliquez sur <strong>Démarrer</strong> pour tester votre temps de réaction.
+        </p>
+        <button id="start-button">Démarrer</button>
+      </div>
+      <!-- Écran de résultats -->
+      <div id="result-screen" class="overlay" style="display: none">
+        <h1>
+          Votre temps : <span id="time-display">0</span> ms
+        </h1>
+        <button id="retry">Rejouer</button>
+        <button id="share">Partager mon score</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
